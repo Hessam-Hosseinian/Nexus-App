@@ -1,3 +1,14 @@
+export interface ColorSchema {
+  Primary: string;
+  Primary_Variant: string;
+  Secendary: string;
+  Background: string;
+  Surface: string;
+  Text_Primary: string;
+  Text_Secondary: string;
+  Border_Divider: string;
+}
+
 export const Colors = {
   light: {
     Primary: "#0369A1",
