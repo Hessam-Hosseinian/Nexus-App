@@ -1,39 +1,111 @@
+# # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# # dependencies
+# node_modules/
+
+# # Expo
+# .expo/
+# dist/
+# web-build/
+# expo-env.d.ts
+
+# # Native
+# .kotlin/
+# *.orig.*
+# *.jks
+# *.p8
+# *.p12
+# *.key
+# *.mobileprovision
+
+# # Metro
+# .metro-health-check*
+
+# # debug
+# npm-debug.*
+# yarn-debug.*
+# yarn-error.*
+
+# # macOS
+# .DS_Store
+# *.pem
+
+# # local env files
+# .env*.local
+
+# # typescript
+# *.tsbuildinfo
+
+# app-example
+
+
+
+
+
+
+
+
+
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
 node_modules/
+.pnpm-store/
+.bun/
 
 # Expo
 .expo/
+.expo-shared/
+.expo-dev/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
-.kotlin/
+# Native (Android/iOS)
+android/
+ios/
 *.orig.*
 *.jks
+*.keystore
 *.p8
 *.p12
 *.key
 *.mobileprovision
 
-# Metro
+# Metro bundler
 .metro-health-check*
+packager-info.json
+metro-cache/
 
-# debug
+# Debug / logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+pnpm-debug.log*
+expo-debug.log
+*.log
 
-# macOS
+# macOS / Windows system files
 .DS_Store
+Thumbs.db
 *.pem
 
-# local env files
+# Local env files
+.env
 .env*.local
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 
+# IDE / Editors
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Example / test app files
 app-example
+
