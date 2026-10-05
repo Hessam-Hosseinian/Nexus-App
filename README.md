@@ -1,50 +1,88 @@
-# Welcome to your Expo app 👋
+# Nexus App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An early-stage **Expo / React Native** application used to experiment with app structure, file-based routing, and a persistent light/dark theme.
 
-## Get started
+This repository is currently a small prototype rather than a finished product.
 
-1. Install dependencies
+## Current implementation
 
-   ```bash
-   npm install
-   ```
+- Expo Router entry point
+- React Native + TypeScript
+- Custom theme context
+- Light and dark color palettes
+- Theme preference persisted with AsyncStorage
+- Basic app shell for continued development
 
-2. Start the app
+## Tech stack
 
-   ```bash
-   npx expo start
-   ```
+- Expo SDK 53
+- React Native 0.79
+- React 19
+- TypeScript
+- Expo Router
+- React Navigation
+- AsyncStorage
+- React Native Reanimated
 
-In the output, you'll find options to open the app in a
+## Project structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+.
+├── app/
+│   ├── _layout.tsx
+│   └── index.tsx
+├── constants/
+│   └── colors.ts
+├── hooks/
+│   └── useTheme.tsx
+├── assets/
+├── app.json
+├── package.json
+└── tsconfig.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting started
 
-## Learn more
+### Prerequisites
 
-To learn more about developing your project with Expo, look at the following resources:
+- Node.js
+- npm
+- Expo-compatible Android/iOS environment or Expo Go
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Install
 
-## Join the community
+```bash
+git clone https://github.com/Hessam-Hosseinian/Nexus-App.git
+cd Nexus-App
+npm install
+```
 
-Join our community of developers creating universal apps.
+### Run
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm start
+```
+
+Or launch a specific target:
+
+```bash
+npm run android
+npm run ios
+npm run web
+```
+
+## Quality check
+
+```bash
+npm run lint
+```
+
+## Status
+
+🚧 **Prototype / work in progress**
+
+The current screen is intentionally minimal and primarily demonstrates project setup and theme persistence.
+
+## License
+
+No open-source license is currently provided.
